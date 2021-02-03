@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Dako Design</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-transition">
+      <div class="page-transition__1"></div>
+      <div class="page-transition__2"></div>
+      <div class="page-transition__3"></div>
+      <div class="transition__logo">
+        <img src="./assets/img/dako.svg" alt="Dako Design" class="logo__img" />
+        <div class="logo__text">Dako Design</div>
+        <div class="logo__slogan">Anchored in simplicity</div>
+      </div>
+    </div>
+
+    <!-- logo -->
+    <a href="index.html" class="logo">
+      <img src="./assets/img/dako.svg" alt="Dako Design" class="logo__img" />
+      <div class="logo__text">Dako Design</div>
+      <div class="page-transition__4"></div>
+    </a>
+    <!-- nav -->
+    <div class="nav">
+      <a href="index.html" class="nav__link active">Portfolio</a>
+      <a href="about.html" class="nav__link">About</a>
+      <div class="nav__link show__btn">Contact</div>
+      <div class="page-transition__4"></div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+      © 2021 Dako Design
+      <div class="page-transition__4"></div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">
+            <img
+              class="swiper-slide__img"
+              src="./assets/img/app_01.png"
+              alt=""
+            />
+            <div class="swiper-slide__intro">
+              <div class="swiper-slide__title">Member Center</div>
+              <div class="swiper-slide__tags">
+                <span class="swiper-slide__tag">APP</span>
+                <span class="swiper-slide__tag">UI</span>
+                <span class="swiper-slide__tag">MOBILE</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">
+            <img
+              class="swiper-slide__img"
+              src="./assets/img/app_01.png"
+              alt=""
+            />
+            <div class="swiper-slide__intro">
+              <div class="swiper-slide__title">Web</div>
+              <div class="swiper-slide__tags">
+                <span class="swiper-slide__tag">Design</span>
+                <span class="swiper-slide__tag">Design</span>
+                <span class="swiper-slide__tag">Design</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">
+            <img
+              class="swiper-slide__img"
+              src="./assets/img/app_01.png"
+              alt=""
+            />
+            <div class="swiper-slide__intro">
+              <div class="swiper-slide__title">Lucky International</div>
+              <div class="swiper-slide__tags">
+                <span class="swiper-slide__tag">Design</span>
+                <span class="swiper-slide__tag">Design</span>
+                <span class="swiper-slide__tag">Design</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <div class="modal hide animate__animated">
+      <div class="modal__container animate__animated">
+        <div class="modal__head">
+          <div class="modal__head__title">Contact</div>
+          <img src="./assets/img/cross.svg" class="modal__hide" alt="" />
+        </div>
+        <div class="modal__body">
+          <a href="tel:0919328235" class="contact__item"
+            >call: +886 919 328 235</a
+          >
+          <a href="mailto:dakotsay@gmail.com" class="contact__item"
+            >mail: dakotsay@gmail.com</a
+          >
+          <a
+            href="https://www.dako.design"
+            target="_blank"
+            class="contact__item"
+            >website: dako.design</a
+          >
+
+          <div class="form">
+            <input
+              id="nameValue"
+              type="text"
+              placeholder="Name"
+              class="form__ipt"
+            />
+            <input
+              id="phoneValue"
+              type="number"
+              placeholder="TEL"
+              class="form__ipt"
+              pattern="number"
+              inputmode="numeric"
+            />
+            <input
+              id="mailValue"
+              type="email"
+              placeholder="Email"
+              class="form__ipt"
+            />
+            <textarea
+              rows="4"
+              id="demandValue"
+              placeholder="Demand"
+              class="form__ipt"
+            ></textarea>
+            <button
+              class="form__btn g-recaptcha"
+              data-sitekey="reCAPTCHA_site_key"
+              data-callback="onSubmit"
+              data-action="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading animate__animated animate__fadeIn">
+      <img class="loading__img" src="./assets/img/ball.svg" alt="loading" />
+    </div>
+
+    <div class="totop"></div>
+    <!-- Google reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Jquery -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- Scrollbar -->
+    <script src="./assets/js/mCustomScrollbar.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
