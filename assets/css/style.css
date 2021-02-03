@@ -520,13 +520,6 @@ a {
   margin-bottom: 16px;
 }
 
-.card__body.row {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 32px;
-}
-
 .card__foot {
   display: flex;
   margin-bottom: 16px;
@@ -536,17 +529,20 @@ a {
   margin-bottom: 16px;
 }
 
-.card__item.cycle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 120px;
-  height: 120px;
-  margin-bottom: 0;
-  border: solid 1px #fff;
-  border-radius: 100px;
-  text-align: center;
-  position: relative;
+.design_cycle_a {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.design_cycle_b {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  display: none;
 }
 
 .arrow {
@@ -671,6 +667,12 @@ a {
   .col-2,
   .col-3 {
     flex: 0 0 100%;
+  }
+  .design_cycle_a {
+    display: none;
+  }
+  .design_cycle_b {
+    display: block;
   }
 }
 
