@@ -33,43 +33,126 @@
   --gray-2: hsl(0, 0%, 75%);
 }
 
+body.invert {
+  --body-bg: linear-gradient(
+    60deg,
+    hsl(200, 9%, 80%) 0%,
+    hsl(200, 9%, 80%) 15%,
+    hsl(200, 9%, 75%) 16%,
+    hsl(200, 9%, 80%) 16%,
+    hsl(200, 9%, 80%) 16%,
+    hsl(200, 9%, 80%) 40%,
+    hsl(200, 9%, 75%) 42%,
+    hsl(200, 9%, 80%) 42%,
+    hsl(200, 9%, 80%) 42%,
+    hsl(200, 9%, 80%) 86%,
+    hsl(200, 9%, 80%) 86%,
+    hsl(200, 9%, 75%) 86%,
+    hsl(200, 9%, 80%) 87%,
+    hsl(200, 9%, 80%) 100%
+  );
+
+  --primary: hsl(200, 30%, 95%);
+  --primary-light: hsl(200, 20%, 85%);
+  --primary-lighten: hsl(200, 20%, 75%);
+  --primary-dark: hsl(200, 20%, 90%);
+  --primary-darken: hsl(200, 20%, 85%);
+
+  --primary-opcity-1: hsl(200, 20%, 95%, 90%);
+  --primary-opcity-2: hsl(200, 10%, 70%, 85%);
+
+  --primary-shadow-1: hsl(200, 15%, 80%);
+  --primary-shadow-2: hsl(200, 15%, 70%);
+
+  --gray-1: hsl(200, 15%, 30%);
+  --gray-2: hsl(200, 15%, 35%);
+}
+
+body.invert .filter {
+  filter: brightness(1);
+}
+
+.filter {
+  filter: brightness(100);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --body-bg: linear-gradient(
       60deg,
-      hsl(200, 24%, 80%) 0%,
-      hsl(200, 24%, 80%) 15%,
-      hsl(200, 24%, 70%) 16%,
-      hsl(200, 24%, 80%) 16%,
-      hsl(200, 24%, 80%) 16%,
-      hsl(200, 24%, 80%) 40%,
-      hsl(200, 24%, 70%) 42%,
-      hsl(200, 24%, 80%) 42%,
-      hsl(200, 24%, 80%) 42%,
-      hsl(200, 24%, 80%) 86%,
-      hsl(200, 24%, 80%) 86%,
-      hsl(200, 24%, 70%) 86%,
-      hsl(200, 24%, 80%) 87%,
-      hsl(200, 24%, 80%) 100%
+      hsl(200, 9%, 80%) 0%,
+      hsl(200, 9%, 80%) 15%,
+      hsl(200, 9%, 75%) 16%,
+      hsl(200, 9%, 80%) 16%,
+      hsl(200, 9%, 80%) 16%,
+      hsl(200, 9%, 80%) 40%,
+      hsl(200, 9%, 75%) 42%,
+      hsl(200, 9%, 80%) 42%,
+      hsl(200, 9%, 80%) 42%,
+      hsl(200, 9%, 80%) 86%,
+      hsl(200, 9%, 80%) 86%,
+      hsl(200, 9%, 75%) 86%,
+      hsl(200, 9%, 80%) 87%,
+      hsl(200, 9%, 80%) 100%
     );
 
-    --primary: hsl(200, 50%, 95%);
-    --primary-light: hsl(200, 30%, 85%);
-    --primary-lighten: hsl(200, 30%, 75%);
-    --primary-dark: hsl(200, 30%, 90%);
-    --primary-darken: hsl(200, 30%, 85%);
+    --primary: hsl(200, 30%, 95%);
+    --primary-light: hsl(200, 20%, 85%);
+    --primary-lighten: hsl(200, 20%, 75%);
+    --primary-dark: hsl(200, 20%, 90%);
+    --primary-darken: hsl(200, 20%, 85%);
 
-    --primary-opcity-1: hsl(200, 30%, 97%, 95%);
-    --primary-opcity-2: hsl(200, 10%, 70%, 90%);
+    --primary-opcity-1: hsl(200, 20%, 95%, 90%);
+    --primary-opcity-2: hsl(200, 10%, 70%, 85%);
 
-    --primary-shadow-1: hsl(200, 30%, 70%);
-    --primary-shadow-2: hsl(200, 30%, 60%);
+    --primary-shadow-1: hsl(200, 15%, 80%);
+    --primary-shadow-2: hsl(200, 15%, 70%);
 
-    --gray-1: hsl(200, 25%, 10%);
-    --gray-2: hsl(200, 25%, 20%);
+    --gray-1: hsl(200, 15%, 30%);
+    --gray-2: hsl(200, 15%, 35%);
   }
+
+  body.invert {
+    --body-bg: linear-gradient(
+      60deg,
+      hsl(200, 9%, 10%) 0%,
+      hsl(200, 9%, 10%) 15%,
+      hsl(200, 9%, 8%) 16%,
+      hsl(200, 9%, 10%) 16%,
+      hsl(200, 9%, 10%) 16%,
+      hsl(200, 9%, 10%) 40%,
+      hsl(200, 9%, 8%) 42%,
+      hsl(200, 9%, 10%) 42%,
+      hsl(200, 9%, 10%) 42%,
+      hsl(200, 9%, 10%) 86%,
+      hsl(200, 9%, 10%) 86%,
+      hsl(200, 9%, 8%) 86%,
+      hsl(200, 9%, 10%) 87%,
+      hsl(200, 9%, 10%) 100%
+    );
+
+    --primary: hsl(200, 10%, 10%);
+    --primary-light: hsl(200, 5%, 15%);
+    --primary-lighten: hsl(200, 5%, 20%);
+    --primary-dark: hsl(200, 5%, 5%);
+    --primary-darken: hsl(200, 5%, 0%);
+
+    --primary-opcity-1: hsl(200, 5%, 15%, 80%);
+    --primary-opcity-2: hsl(200, 5%, 5%, 90%);
+
+    --primary-shadow-1: hsl(200, 15%, 10%);
+    --primary-shadow-2: hsl(200, 15%, 5%);
+
+    --gray-1: hsl(0, 0%, 100%);
+    --gray-2: hsl(0, 0%, 75%);
+  }
+
   .filter {
-    filter: invert(1);
+    filter: brightness(1);
+  }
+
+  body.invert .filter {
+    filter: brightness(100);
   }
 }
 
@@ -248,6 +331,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 400;
 }
 
 .swiper-slide__title::before {
@@ -255,8 +339,8 @@ a {
   display: block;
   float: left;
   margin-top: 3px;
-  margin-right: 8px;
-  width: 4px;
+  margin-right: 4px;
+  width: 2px;
   height: 14px;
   background-color: var(--gray-1);
   border-radius: 100px;
@@ -265,15 +349,15 @@ a {
 .swiper-slide__tags {
   overflow-x: auto;
   white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .swiper-slide__tag {
-  display: block;
-  float: left;
   color: var(--gray-2);
-  font-weight: 100;
   font-size: 12px;
   border-radius: 100px;
+  flex: 0;
   padding: 0 8px;
   margin-right: 4px;
   box-shadow: 0 0 0 0.5px var(--gray-2) inset;
@@ -298,7 +382,17 @@ a {
   font-size: 14px;
 }
 
+.swiper-button-prev.swiper-button-white,
+.swiper-button-next.swiper-button-white {
+  color: var(--gray-1);
+}
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: var(--gray-1);
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
   background-color: var(--gray-1);
 }
 
@@ -425,8 +519,8 @@ a {
   font-size: 0;
   border-radius: 100px;
   margin-top: 3px;
-  margin-right: 8px;
-  width: 4px;
+  margin-right: 4px;
+  width: 2px;
   height: 14px;
   background-color: var(--gray-1);
 }
@@ -549,9 +643,9 @@ a {
   display: block;
   float: left;
   margin-top: 3px;
-  margin-right: 8px;
+  margin-right: 4px;
   border-radius: 100px;
-  width: 4px;
+  width: 2px;
   height: 14px;
   background-color: var(--gray-1);
 }
@@ -660,6 +754,56 @@ a {
   letter-spacing: 0;
   text-transform: none;
   font-variant: initial;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.switch__ipt {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch__round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-lighten);
+  transition: 0.3s;
+  border-radius: 100px;
+}
+
+.switch__round:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--gray-1);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.switch__ipt:checked + .switch__round {
+  background-color: var(--primary);
+}
+
+.switch__ipt:focus + .switch__round {
+  box-shadow: 0 0 1px var(--primary);
+}
+
+.switch__ipt:checked + .switch__round:before {
+  transform: translateX(20px);
 }
 
 .col-1,

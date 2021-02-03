@@ -288,4 +288,10 @@ $(function () {
   }
 
   sendButton.addEventListener("click", send);
+
+  var modeBtn = document.querySelector(".switch__ipt");
+
+  modeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("invert");
+  });
 });
