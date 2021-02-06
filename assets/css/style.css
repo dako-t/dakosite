@@ -408,6 +408,7 @@ a {
   width: 100%;
   height: 100%;
   transform: skewX(30deg) scale(2.1);
+  pointer-events: none;
 }
 
 .page-transition__1 {
@@ -448,6 +449,7 @@ a {
   width: 100%;
   background: var(--gray-2);
   z-index: 200;
+  pointer-events: none;
 }
 
 .transition__logo {
