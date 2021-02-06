@@ -292,6 +292,15 @@ $(function () {
   var modeBtn = document.querySelector(".switch__ipt");
 
   modeBtn.addEventListener("click", function () {
-    document.body.classList.toggle("invert");
+    if (document.body.className == "") {
+      document.body.classList.add("invert");
+      localStorage.setItem("bodyClass", "invert");
+    } else {
+      localStorage.removeItem("bodyClass");
+      document.body.classList.remove("invert");
+    }
   });
+  if (localStorage.getItem("bodyClass") != null) {
+    document.body.className = localStorage.bodyClass;
+  }
 });
