@@ -795,7 +795,7 @@ a {
 }
 
 .switch__ipt:checked + .switch__round {
-  background-color: var(--primary);
+  background-color: var(--primary-lighten);
 }
 
 .switch__ipt:focus + .switch__round {
