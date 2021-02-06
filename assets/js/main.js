@@ -290,17 +290,19 @@ $(function () {
   sendButton.addEventListener("click", send);
 
   var modeBtn = document.querySelector(".switch__ipt");
-
   modeBtn.addEventListener("click", function () {
     if (document.body.className == "") {
       document.body.classList.add("invert");
       localStorage.setItem("bodyClass", "invert");
+      localStorage.setItem("switchIpt", "checked");
     } else {
       localStorage.removeItem("bodyClass");
+      localStorage.removeItem("switchIpt");
       document.body.classList.remove("invert");
     }
   });
   if (localStorage.getItem("bodyClass") != null) {
     document.body.className = localStorage.bodyClass;
+    modeBtn.checked = "checked";
   }
 });
