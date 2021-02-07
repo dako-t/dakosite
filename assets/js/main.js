@@ -248,19 +248,19 @@ $(function () {
     let demand = document.querySelector(".demandValue").value;
 
     if (name == "") {
-      alert("請填入姓名");
+      alert("PLEASE COMPLETE THIS REQUIRED FIELD.");
       name.focus();
       return false;
     } else if (phone == "") {
-      alert("請填入電話");
+      alert("y");
       phone.focus();
       return false;
     } else if (mail == "") {
-      alert("請填入e-mail？");
+      alert("PLEASE COMPLETE THIS REQUIRED FIELD.");
       mail.focus();
       return false;
     } else if (demand == "") {
-      alert("請填入您的需求或是資訊");
+      alert("PLEASE COMPLETE THIS REQUIRED FIELD.");
       demand.focus();
       return false;
     } else

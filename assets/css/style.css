@@ -808,6 +808,16 @@ a {
   transform: translateX(20px);
 }
 
+.coming-soon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--primary-opcity-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .col-1,
 .col-2,
 .col-3 {
