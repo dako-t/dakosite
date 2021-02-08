@@ -292,6 +292,7 @@ a {
   transition: 0.3s;
   background-color: var(--primary-opcity-1);
   box-shadow: 0 5px 10px var(--primary-shadow-1);
+  opacity: 0;
 }
 
 .swiper-slide__link:hover {
@@ -657,6 +658,11 @@ a {
   flex-wrap: wrap;
 }
 
+.section__content.icons {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .card {
   border-radius: 12px;
   background-color: var(--primary-opcity-1);
@@ -673,24 +679,31 @@ a {
 
 .card__head {
   display: flex;
-  padding: 16px 0 32px;
+  padding-bottom: 32px;
   font-weight: 400;
 }
 
 .card__body {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  align-items: center;
 }
 
 .card__foot {
   display: flex;
-  margin-top: 8px;
-  margin-bottom: 16px;
+  padding: 16px 0;
 }
 
 .card__item {
   margin-bottom: 8px;
+}
+
+.card__item:last-child {
+  margin-bottom: 0;
+}
+
+.card__item.center {
+  text-align: center;
 }
 
 .design_cycle_a {
@@ -819,7 +832,9 @@ a {
 
 .col-1,
 .col-2,
-.col-3 {
+.col-3,
+.col-4,
+.col-6 {
   padding: 0 16px;
   transition: 0.6s;
   margin-bottom: 32px;
@@ -837,6 +852,13 @@ a {
   flex: 0 0 33.33%;
 }
 
+.col-4 {
+  flex: 0 0 25%;
+}
+
+.col-6 {
+  flex: 0 0 16.66%;
+}
 @media only screen and (max-width: 480px) {
   .logo {
     left: 13px;
@@ -891,6 +913,22 @@ a {
   .col-3 {
     flex: 0 0 100%;
   }
+
+  .col-6 {
+    flex: 0 0 50%;
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+
+  .col-6:nth-child(2n) {
+    padding-left: 8px;
+    padding-right: 16px;
+  }
+
+  .section__content.icons .col-6 {
+    margin-bottom: 16px;
+  }
+
   .design_cycle_a {
     display: none;
   }
@@ -902,6 +940,35 @@ a {
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .col-3 {
     flex: 0 0 50%;
+  }
+
+  .col-6 {
+    flex: 0 0 25%;
+    padding-left: 16px;
+    padding-right: 4px;
+  }
+  .col-6:nth-child(4n + 1) {
+    padding-left: 16px;
+    padding-right: 4px;
+  }
+
+  .col-6:nth-child(4n + 2) {
+    padding-left: 12px;
+    padding-right: 8px;
+  }
+
+  .col-6:nth-child(4n - 1) {
+    padding-left: 8px;
+    padding-right: 12px;
+  }
+
+  .col-6:nth-child(4n) {
+    padding-left: 4px;
+    padding-right: 16px;
+  }
+
+  .section__content.icons .col-6 {
+    margin-bottom: 16px;
   }
 
   .totop {
