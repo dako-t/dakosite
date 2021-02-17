@@ -58,8 +58,8 @@ body.invert {
   --primary-dark: hsl(200, 20%, 90%);
   --primary-darken: hsl(200, 20%, 85%);
 
-  --primary-opcity-1: hsl(200, 20%, 95%, 90%);
-  --primary-opcity-2: hsl(200, 10%, 70%, 85%);
+  --primary-opcity-1: hsl(200, 20%, 90%, 80%);
+  --primary-opcity-2: hsl(200, 10%, 70%, 75%);
 
   --primary-shadow-1: hsl(200, 15%, 80%);
   --primary-shadow-2: hsl(200, 15%, 70%);
@@ -102,11 +102,11 @@ body.invert .filter {
     --primary-dark: hsl(200, 20%, 90%);
     --primary-darken: hsl(200, 20%, 85%);
 
-    --primary-opcity-1: hsl(200, 20%, 95%, 90%);
-    --primary-opcity-2: hsl(200, 10%, 70%, 85%);
+    --primary-opcity-1: hsl(200, 20%, 90%, 80%);
+    --primary-opcity-2: hsl(200, 10%, 70%, 75%);
 
-    --primary-shadow-1: hsl(200, 15%, 80%);
-    --primary-shadow-2: hsl(200, 15%, 70%);
+    --primary-shadow-1: hsl(200, 15%, 70%);
+    --primary-shadow-2: hsl(200, 15%, 80%);
 
     --gray-1: hsl(200, 15%, 30%);
     --gray-2: hsl(200, 15%, 35%);
