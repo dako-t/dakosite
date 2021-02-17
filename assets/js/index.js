@@ -11,6 +11,7 @@ $(function () {
   var $slide__img = document.querySelectorAll(".swiper-slide__link");
 
   var $card = document.querySelectorAll(".card");
+  var $cardShow = document.querySelectorAll(".card-show");
 
   var $sBtn = document.querySelectorAll(".swiper-button-white");
   var $logo = document.querySelector(".transition__logo");

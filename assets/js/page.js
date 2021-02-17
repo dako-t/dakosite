@@ -11,6 +11,7 @@ $(function () {
   var $slide__img = document.querySelectorAll(".swiper-slide__link");
 
   var $card = document.querySelectorAll(".card");
+  var $cardShow = document.querySelectorAll(".card-show");
 
   var $sBtn = document.querySelectorAll(".swiper-button-white");
   var $logo = document.querySelector(".transition__logo");
@@ -29,6 +30,19 @@ $(function () {
       ease: Power2.easeInOut,
     },
     0
+  );
+
+  tl.staggerFromTo(
+    $cardShow,
+    1,
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+    },
+    0.3,
+    0.6
   );
 
   tl.staggerFromTo(
