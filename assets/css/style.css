@@ -642,6 +642,12 @@ a {
   overflow: hidden;
 }
 
+.section__link {
+  width: 100%;
+  display: block;
+  margin: 0 16px 16px;
+}
+
 .section__title::before {
   content: "";
   display: block;
