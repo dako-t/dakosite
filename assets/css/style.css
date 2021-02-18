@@ -163,8 +163,6 @@ body {
   background: var(--primary);
 }
 body {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   font-size: 14px;
   line-height: 20px;
@@ -387,6 +385,25 @@ a {
 .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {
   color: var(--gray-1);
+}
+
+.mCSB_container {
+  -webkit-overflow-scrolling: touch;
+}
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger {
+  height: 8px;
+}
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 8px;
+  margin: 0 auto;
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
