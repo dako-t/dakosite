@@ -1017,6 +1017,15 @@ a {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 960px) {
+  .logo,
+  .copyright {
+    left: 16px;
+  }
+
+  .nav {
+    right: 16px;
+  }
+
   .col-3 {
     flex: 0 0 50%;
   }
