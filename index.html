@@ -406,14 +406,7 @@
             >Website: dako.studio</a
           >
 
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-
-          <!-- <form class="form" name="contact" method="POST" data-netlify="true">
+          <form class="form" name="contact" method="POST" data-netlify="true">
             <input
               class="nameValue form__ipt"
               type="text"
@@ -423,22 +416,59 @@
             <input
               class="phoneValue form__ipt"
               type="number"
-              placeholder="Tel"
               name="tel"
               pattern="number"
               inputmode="numeric"
+              placeholder="Tel"
             />
             <input
-              class="mailValue form__ipt"
+              class="phoneValue form__ipt"
               type="email"
               name="email"
               placeholder="Email"
             />
             <textarea
-              rows="4"
               class="demandValue form__ipt"
+              rows="4"
               name="message"
               placeholder="Message"
+            ></textarea>
+            <button
+              class="form__btn g-recaptcha"
+              data-sitekey="reCAPTCHA_site_key"
+              data-callback="onSubmit"
+              data-action="submit"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <!-- <form  name="contact" method="POST" data-netlify="true">
+            <input
+              
+              type="text"
+              name="name"
+              
+            />
+            <input
+              
+              type="number"
+              
+              name="tel"
+              
+            />
+            <input
+              class="mailValue form__ipt"
+              type="email"
+              name="email"
+              
+            />
+            <textarea
+              
+              
+              name="message"
+              
             ></textarea>
             <button
               class="form__btn g-recaptcha"
