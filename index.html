@@ -406,7 +406,14 @@
             >Website: dako.studio</a
           >
 
-          <form class="form" name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+
+          <!-- <form class="form" name="contact" method="POST" data-netlify="true">
             <input
               class="nameValue form__ipt"
               type="text"
@@ -442,7 +449,7 @@
             >
               Send Message
             </button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
