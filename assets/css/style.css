@@ -1016,6 +1016,11 @@ a {
   }
 }
 
+.g-recaptcha {
+  transform: scale(0.885);
+  transform-origin: 0 0;
+}
+
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .logo,
   .copyright {
