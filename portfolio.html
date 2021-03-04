@@ -370,7 +370,13 @@
             >Website: dako.studio</a
           >
 
-          <form class="form" name="contact" method="POST" data-netlify="true">
+          <form
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <input
               class="nameValue form__ipt"
               type="text"
@@ -397,6 +403,7 @@
               name="message"
               placeholder="Message"
             ></textarea>
+            <div data-netlify-recaptcha="true"></div>
             <button class="form__btn" type="submit">Send Message</button>
           </form>
         </div>
