@@ -406,7 +406,13 @@
             >Website: dako.studio</a
           >
 
-          <form class="form" name="contact" method="POST" data-netlify="true">
+          <form
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <input
               class="nameValue form__ipt"
               type="text"
@@ -435,43 +441,6 @@
             ></textarea>
             <button class="form__btn" type="submit">Send Message</button>
           </form>
-
-          <!-- <form  name="contact" method="POST" data-netlify="true">
-            <input
-              
-              type="text"
-              name="name"
-              
-            />
-            <input
-              
-              type="number"
-              
-              name="tel"
-              
-            />
-            <input
-              class="mailValue form__ipt"
-              type="email"
-              name="email"
-              
-            />
-            <textarea
-              
-              
-              name="message"
-              
-            ></textarea>
-            <button
-              class="form__btn g-recaptcha"
-              data-sitekey="reCAPTCHA_site_key"
-              data-callback="onSubmit"
-              data-action="submit"
-              type="submit"
-            >
-              Send Message
-            </button>
-          </form> -->
         </div>
       </div>
     </div>
