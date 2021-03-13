@@ -37,6 +37,7 @@ $(function () {
   var hideBtn = document.getElementsByClassName("modal__hide")[0];
 
   // When the user clicks the button, open the modal
+
   showBtn.onclick = function () {
     modal.classList.remove("hide");
     modal.classList.remove("animate__fadeOut");
@@ -93,15 +94,21 @@ $(function () {
       prevEl: ".swiper-button-prev",
     },
   });
-
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
   // Modal Form
-  let sendButton = document.querySelector("button");
+  //let sendButton = document.querySelector(".form__btn");
 
   function send() {
-    let name = document.querySelector(".nameValue").value;
-    let phone = document.querySelector(".phoneValue").value;
-    let mail = document.querySelector(".mailValue").value;
-    let demand = document.querySelector(".demandValue").value;
+    var name = document.forms["contact"]["nameValue"].value;
+    var phone = document.forms["contact"]["phoneValue"].value;
+    var mail = document.forms["contact"]["mailValue"].value;
+    var demand = document.forms["contact"]["demandValue"].value;
 
     if (name == "") {
       alert("PLEASE COMPLETE THIS REQUIRED FIELD.");
@@ -119,31 +126,32 @@ $(function () {
       alert("PLEASE COMPLETE THIS REQUIRED FIELD.");
       demand.focus();
       return false;
-    } else
-      $.ajax({
-        url:
-          "https://script.google.com/macros/s/AKfycbyk6J7USI69zbwgWpldg8yKMlaix2p8BgqVhpTyjw/exec",
-        data: {
-          name: name,
-          phone: phone,
-          mail: mail,
-          demand: demand,
-        },
-        success: function (response) {
-          if (response == "成功") {
-            alert("成功送出");
-          }
-        },
-        beforeSend: function (response) {
-          $(".loading").show();
-        },
-        complete: function (response) {
-          $(".loading").hide();
-        },
-      });
+    }
+    // else
+    //   $.ajax({
+    //     url:
+    //       "https://script.google.com/macros/s/AKfycbyk6J7USI69zbwgWpldg8yKMlaix2p8BgqVhpTyjw/exec",
+    //     data: {
+    //       name: name,
+    //       phone: phone,
+    //       mail: mail,
+    //       demand: demand,
+    //     },
+    //     success: function (response) {
+    //       if (response == "成功") {
+    //         alert("成功送出");
+    //       }
+    //     },
+    //     beforeSend: function (response) {
+    //       $(".loading").show();
+    //     },
+    //     complete: function (response) {
+    //       $(".loading").hide();
+    //     },
+    //   });
   }
 
-  sendButton.addEventListener("click", send);
+  // sendButton.addEventListener("click", send);
 
   var modeBtn = document.querySelector(".switch__ipt");
   modeBtn.addEventListener("click", function () {

@@ -373,38 +373,43 @@
           <form
             class="form"
             name="contact"
-            method="POST"
+            onsubmit="return send()"
+            method="post"
             data-netlify-recaptcha="true"
             data-netlify="true"
           >
             <input
-              class="nameValue form__ipt"
+              class="form__ipt"
               type="text"
-              name="name"
+              name="nameValue"
               placeholder="Name"
+              required
             />
             <input
-              class="phoneValue form__ipt"
+              class="form__ipt"
               type="number"
-              name="tel"
+              name="phoneValue"
               pattern="number"
               inputmode="numeric"
               placeholder="Tel"
+              required
             />
             <input
-              class="phoneValue form__ipt"
+              class="form__ipt"
               type="email"
-              name="email"
+              name="mailValue"
               placeholder="Email"
+              required
             />
             <textarea
-              class="demandValue form__ipt"
+              class="form__ipt"
               rows="4"
-              name="message"
+              name="demandValue"
               placeholder="Message"
+              required
             ></textarea>
-            <div data-netlify-recaptcha="true"></div>
-            <button class="form__btn" type="submit">Send Message</button>
+            <!-- <div data-netlify-recaptcha="true"></div> -->
+            <input class="form__btn" type="submit" value="Send Message" />
           </form>
         </div>
       </div>
