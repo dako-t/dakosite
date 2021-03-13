@@ -176,33 +176,45 @@
             >Website: dako.studio</a
           >
 
-          <form class="form">
-            <input class="nameValue form__ipt" type="text" placeholder="Name" />
+          <form
+            class="form"
+            name="contact"
+            method="post"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <input
-              class="phoneValue form__ipt"
+              class="form__ipt"
+              type="text"
+              name="nameValue"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="form__ipt"
               type="number"
-              placeholder="Tel"
+              name="phoneValue"
               pattern="number"
               inputmode="numeric"
+              placeholder="Tel"
+              required
             />
             <input
-              class="mailValue form__ipt"
+              class="form__ipt"
               type="email"
+              name="mailValue"
               placeholder="Email"
+              required
             />
             <textarea
+              class="form__ipt"
               rows="4"
-              class="demandValue form__ipt"
+              name="demandValue"
               placeholder="Message"
+              required
             ></textarea>
-            <button
-              class="form__btn g-recaptcha"
-              data-sitekey="reCAPTCHA_site_key"
-              data-callback="onSubmit"
-              data-action="submit"
-            >
-              Send Message
-            </button>
+            <!-- <div data-netlify-recaptcha="true"></div> -->
+            <input class="form__btn" type="submit" value="Send Message" />
           </form>
         </div>
       </div>
