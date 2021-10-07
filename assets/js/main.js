@@ -73,6 +73,10 @@ $(function () {
       el: ".swiper-pagination",
       type: "progressbar",
     },
+
+    hashNavigation: {
+      watchState: true,
+    },
     centeredSlides: true,
     mousewheel: true,
     slidesPerView: 1,

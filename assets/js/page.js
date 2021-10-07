@@ -45,18 +45,18 @@ $(function () {
     0.6
   );
 
-  tl.staggerFromTo(
-    $slide__img,
-    1,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-    },
-    0.3,
-    0
-  );
+  // tl.staggerFromTo(
+  //   $slide__img,
+  //   1,
+  //   {
+  //     opacity: 0,
+  //   },
+  //   {
+  //     opacity: 1,
+  //   },
+  //   0.3,
+  //   0
+  // );
 
   tl.set($frame4, {
     scaleX: 0,
@@ -66,16 +66,16 @@ $(function () {
     opacity: 1,
   });
 
-  tl.fromTo(
-    $sBtn,
-    0.5,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      ease: Power2.easeInOut,
-    },
-    5
-  );
+  // tl.fromTo(
+  //   $sBtn,
+  //   0.5,
+  //   {
+  //     opacity: 0,
+  //   },
+  //   {
+  //     opacity: 1,
+  //     ease: Power2.easeInOut,
+  //   },
+  //   5
+  // );
 });
