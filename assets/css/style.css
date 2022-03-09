@@ -219,6 +219,7 @@ a {
   margin-left: 24px;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav__link:after {
