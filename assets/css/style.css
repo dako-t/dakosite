@@ -177,7 +177,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: var(--gray-1);
 }
 
@@ -667,18 +666,6 @@ a {
   width: 100%;
   display: block;
   margin: 0 16px 16px;
-}
-
-.section__title::before {
-  content: "";
-  display: block;
-  float: left;
-  margin-top: 3px;
-  margin-right: 4px;
-  border-radius: 100px;
-  width: 2px;
-  height: 14px;
-  background-color: var(--gray-1);
 }
 
 .section__content {
