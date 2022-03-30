@@ -338,18 +338,6 @@ a {
   font-weight: 400;
 }
 
-.swiper-slide__title::before {
-  content: "";
-  display: block;
-  float: left;
-  margin-top: 3px;
-  margin-right: 4px;
-  width: 2px;
-  height: 14px;
-  background-color: var(--gray-1);
-  border-radius: 100px;
-}
-
 .swiper-slide__tags {
   overflow-x: auto;
   white-space: nowrap;
