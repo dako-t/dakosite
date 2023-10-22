@@ -101,6 +101,7 @@ body {
   height: 100%;
   width: 100%;
   background: var(--primary);
+  cursor: none;
 }
 body {
   overflow: hidden;
@@ -132,8 +133,8 @@ a {
   transition: 0.6s;
 }
 .logo__img {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   display: block;
   float: left;
   margin-right: 4px;
@@ -916,10 +917,6 @@ a {
     width: 86%;
   }
 
-  .logo__img {
-    width: 30px;
-    height: 30px;
-  }
 
   .logo .logo__text {
     display: none;
@@ -1049,11 +1046,6 @@ a {
     left: 28px;
     top: 28px;
     font-size: 20px;
-  }
-
-  .logo__img {
-    width: 24px;
-    height: 24px;
   }
 
   .nav {
